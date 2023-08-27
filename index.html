@@ -11,27 +11,20 @@
 </head>
 <body>
     <div>
-
+            <div class="flex justify-center items-center container mx-auto bg-green-200 min-h-[100px] ">
+                <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+                <button class="btn btn-outline btn-primary">Search</button>
+        </div>
         <!-- !for phones show -->
-        <div class="container mx-auto">
-            <div>
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            Shoes!
-                            <div class="badge badge-secondary">NEW</div>
-                        </h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <div class="badge badge-outline">Fashion</div>
-                            <div class="badge badge-outline">Products</div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container mx-auto flex justify-center items-center mt-12">
+            <div id="parent-container" class="grid grid-cols-1 justify-between items-center gap-4 lg:gap-40 p-4 md:grid-cols-2 lg:grid-cols-3">
+                <!-- !here append child dynamically -->
+
             </div>
         </div>
-
     </div>
+
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
