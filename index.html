@@ -12,8 +12,8 @@
 <body>
     <div>
             <div class="flex justify-center items-center container mx-auto bg-green-200 min-h-[100px] ">
-                <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
-                <button class="btn btn-outline btn-primary">Search</button>
+                <input id="input-value" type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+                <button onclick="search(true)" class="btn btn-outline btn-primary">Search</button>
         </div>
         <!-- !for phones show -->
         <div class="container mx-auto flex justify-center items-center mt-12">
@@ -22,6 +22,10 @@
 
             </div>
         </div>
+        <div class="text-center mt-5 mb-10 hidden">
+            <button id="show-more" onclick="showMore(true)" class="btn btn-outline btn-primary">Show More</button>
+        </div>
+        
     </div>
 
 
