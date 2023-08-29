@@ -11,9 +11,9 @@
 </head>
 <body>
     <div>
-            <div class="flex justify-center items-center container mx-auto bg-green-200 min-h-[100px] ">
+        <div class="flex justify-center items-center container mx-auto bg-green-200 min-h-[100px] ">
                 <input id="input-value" type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
-                <button onclick="search(true)" class="btn btn-outline btn-primary">Search</button>
+                <button onclick="search()" class="btn btn-outline btn-primary">Search</button>
         </div>
         <!-- !for phones show -->
         <div class="container mx-auto flex justify-center items-center mt-12">
@@ -22,9 +22,20 @@
 
             </div>
         </div>
-        <div class="text-center mt-5 mb-10 hidden">
-            <button id="show-more" onclick="showMore(true)" class="btn btn-outline btn-primary">Show More</button>
+        <div id="showMore-button" class="text-center mt-5 mb-10 hidden">
+            <button onclick="showMore()" id="show-more" class="btn btn-outline btn-primary">Show More</button>
         </div>
+        <!-- You can open the modal using ID.showModal() method -->
+        <!-- You can open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal.showModal()">open modal</button> -->
+        <dialog id="my_modal" class="modal">
+            <form method="dialog" class="modal-box">
+                <div id="image-div">
+
+                </div>
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+        </dialog>
         
     </div>
 
